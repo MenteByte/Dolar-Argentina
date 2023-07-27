@@ -85,7 +85,7 @@ async def enviar_datos_periodicamente():
                         print(f'Error al enviar o actualizar el mensaje en {channel}: {e}')
 
             guardar_ids_de_mensajes(message_ids)
-            # Espera 45 minutos antes de enviar la siguiente actualización
+            # Espera 2 minutos antes de enviar la siguiente actualización
             await asyncio.sleep(2 * 60)
 
 # Crea y ejecuta el bot
